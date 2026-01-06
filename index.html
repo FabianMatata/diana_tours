@@ -2,821 +2,554 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Tours Agency</title>
-
-  <!-- 
-  - favicon
-  -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <!-- 
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!-- 
-    - google font link
-  -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&family=Poppins:wght@400;500;600;700&display=swap"
-    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rivon Safaris</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body id="top">
-
-  <!-- 
-    - #HEADER
-  -->
-
-  <header class="header" data-header>
-
-    <div class="overlay" data-overlay></div>
-
-    <div class="header-top">
-      <div class="container">
-
-        <a href="tel:+01123456790" class="helpline-box">
-
-          <div class="icon-box">
-            <ion-icon name="call-outline"></ion-icon>
-          </div>
-
-          <div class="wrapper">
-            <p class="helpline-title">For Further Inquires :</p>
-
-            <p class="helpline-number">+254 777 990 664</p>
-          </div>
-
-        </a>
-
-        <a href="#" class="logo">
-          <img src="./assets/images/logo.svg" alt="Tourly logo">
-        </a>
-
-        <div class="header-btn-group">
-
-          <button class="search-btn" aria-label="Search">
-            <ion-icon name="search"></ion-icon>
-          </button>
-
-          <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
-            <ion-icon name="menu-outline"></ion-icon>
-          </button>
-
-        </div>
-
-      </div>
-    </div>
-
-    <div class="header-bottom">
-      <div class="container">
-
-        <ul class="social-list">
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-facebook"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-twitter"></ion-icon>
-            </a>
-          </li>
-
-          <li>
-            <a href="#" class="social-link">
-              <ion-icon name="logo-youtube"></ion-icon>
-            </a>
-          </li>
-
-        </ul>
-
-        <nav class="navbar" data-navbar>
-
-          <div class="navbar-top">
-
-            <a href="#" class="logo">
-              <img src="./assets/images/logo-blue.svg" alt="Tourly logo">
-            </a>
-
-            <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-          </div>
-
-          <ul class="navbar-list">
-
-            <li>
-              <a href="#home" class="navbar-link" data-nav-link>home</a>
-            </li>
-
-            <li>
-              <a href="#" class="navbar-link" data-nav-link>about us</a>
-            </li>
-
-            <li>
-              <a href="#destination" class="navbar-link" data-nav-link>destination</a>
-            </li>
-
-            <li>
-              <a href="#package" class="navbar-link" data-nav-link>packages</a>
-            </li>
-
-            <li>
-              <a href="#gallery" class="navbar-link" data-nav-link>gallery</a>
-            </li>
-
-            <li>
-              <a href="#blog" class="navbar-link" data-nav-link>blog</a>
-            </li>
-
-            <li>
-              <a href="#contact" class="navbar-link" data-nav-link>contact us</a>
-            </li>
-
-          </ul>
-
-        </nav>
-
-        <button class="btn btn-primary">Book Now</button>
-
-      </div>
-    </div>
-
-  </header>
-
-  <main>
-    <article>
-
-      <!-- 
-        - #HERO
-      -->
-
-      <section class="hero" id="home">
-        <div class="container">
-
-          <h2 class="h1 hero-title">Journey to explore world</h2>
-
-          <p class="hero-text">
-            Ac mi duis mollis. Sapiente? Scelerisque quae, penatibus? Suscipit class corporis nostra rem quos
-            voluptatibus habitant?
-            Fames, vivamus minim nemo enim, gravida lobortis quasi, eum.
-          </p>
-
-          <div class="btn-group">
-            <button class="btn btn-primary">Learn more</button>
-
-            <button class="btn btn-secondary">Book now</button>
-          </div>
-
-        </div>
-      </section>
-
-      <!-- 
-        - #TOUR SEARCH
-      -->
-
-      <section class="tour-search">
-        <div class="container">
-
-          <form action="" class="tour-search-form">
-
-            <div class="input-wrapper">
-              <label for="destination" class="input-label">Search Destination*</label>
-
-              <input type="text" name="destination" id="destination" required placeholder="Enter Destination"
-                class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="people" class="input-label">Pax Number*</label>
-
-              <input type="number" name="people" id="people" required placeholder="No.of People" class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkin" class="input-label">Checkin Date**</label>
-
-              <input type="date" name="checkin" id="checkin" required class="input-field">
-            </div>
-
-            <div class="input-wrapper">
-              <label for="checkout" class="input-label">Checkout Date*</label>
-
-              <input type="date" name="checkout" id="checkout" required class="input-field">
-            </div>
-
-            <button type="submit" class="btn btn-secondary">Inquire now</button>
-
-          </form>
-
-        </div>
-      </section>
-
-      <!-- 
-        - #POPULAR
-      -->
-
-      <section class="popular" id="destination">
-        <div class="container">
-
-          <p class="section-subtitle">Uncover place</p>
-
-          <h2 class="h2 section-title">Popular destination</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="popular-list">
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-1.jpg" alt="San miguel, italy" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Italy</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">San miguel</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-2.jpg" alt="Burj khalifa, dubai" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Dubai</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Burj khalifa</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-            <li>
-              <div class="popular-card">
-
-                <figure class="card-img">
-                  <img src="./assets/images/popular-3.jpg" alt="Kyoto temple, japan" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <div class="card-rating">
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                    <ion-icon name="star"></ion-icon>
-                  </div>
-
-                  <p class="card-subtitle">
-                    <a href="#">Japan</a>
-                  </p>
-
-                  <h3 class="h3 card-title">
-                    <a href="#">Kyoto temple</a>
-                  </h3>
-
-                  <p class="card-text">
-                    Fusce hic augue velit wisi ips quibusdam pariatur, iusto.
-                  </p>
-
-                </div>
-
-              </div>
-            </li>
-
-          </ul>
-
-          <button class="btn btn-primary">More destination</button>
-
-        </div>
-      </section>
-
-      <!-- 
-        - #PACKAGE
-      -->
-
-      <section class="package" id="package">
-        <div class="container">
-
-          <p class="section-subtitle">Popular Packeges</p>
-
-          <h2 class="h2 section-title">Checkout Our Packeges</h2>
-
-          <p class="section-text">
-            Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque laudantium.
-            Sit ornare
-            mollitia tenetur, aptent.
-          </p>
-
-          <ul class="package-list">
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-1.jpg" alt="Experience The Great Holiday On Beach" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Experience The Great Holiday On Beach</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(25 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
+<body>
+
+    <!--header section-->
+    <section>
+        <header class="navbar">
+            <div class="logo">rivonsafaris</div>
+
+            <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+
+            <nav id="nav">
+                <div class="dropdown">
+                    <button>Home</button>
+                    <div class="dropdown-content">
+                        <a href="#">Overview</a>
+                        <a href="#">Highlights</a>
                     </div>
-
-                  </div>
-
-                  <p class="price">
-                    $750
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
                 </div>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-2.jpg" alt="Summer Holiday To The Oxolotan River" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Summer Holiday To The Oxolotan River</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(20 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
+                <div class="dropdown">
+                    <button>Safaris</button>
+                    <div class="dropdown-content">
+                        <a href="#">Kenya Safaris</a>
+                        <a href="#">Tanzania Safaris</a>
+                        <a href="#">Uganda Safaris</a>
                     </div>
-
-                  </div>
-
-                  <p class="price">
-                    $520
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
                 </div>
 
-              </div>
-            </li>
-
-            <li>
-              <div class="package-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/packege-3.jpg" alt="Santorini Island's Weekend Vacation" loading="lazy">
-                </figure>
-
-                <div class="card-content">
-
-                  <h3 class="h3 card-title">Santorini Island's Weekend Vacation</h3>
-
-                  <p class="card-text">
-                    Laoreet, voluptatum nihil dolor esse quaerat mattis explicabo maiores, est aliquet porttitor! Eaque,
-                    cras, aspernatur.
-                  </p>
-
-                  <ul class="card-meta-list">
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="time"></ion-icon>
-
-                        <p class="text">7D/6N</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="people"></ion-icon>
-
-                        <p class="text">pax: 10</p>
-                      </div>
-                    </li>
-
-                    <li class="card-meta-item">
-                      <div class="meta-box">
-                        <ion-icon name="location"></ion-icon>
-
-                        <p class="text">Malaysia</p>
-                      </div>
-                    </li>
-
-                  </ul>
-
-                </div>
-
-                <div class="card-price">
-
-                  <div class="wrapper">
-
-                    <p class="reviews">(40 reviews)</p>
-
-                    <div class="card-rating">
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
-                      <ion-icon name="star"></ion-icon>
+                <div class="dropdown">
+                    <button>Destinations</button>
+                    <div class="dropdown-content">
+                        <a href="#">Masai Mara</a>
+                        <a href="#">Serengeti</a>
+                        <a href="#">Ngorongoro</a>
                     </div>
-
-                  </div>
-
-                  <p class="price">
-                    $660
-                    <span>/ per person</span>
-                  </p>
-
-                  <button class="btn btn-secondary">Book Now</button>
-
                 </div>
 
-              </div>
-            </li>
-          </ul>
+                <div class="dropdown">
+                    <button>Hotels</button>
+                    <div class="dropdown-content">
+                        <a href="#"></a>
+                        <a href="#"></a>
+                        <a href="#"></a>
+                    </div>
+                </div>
 
-          <button class="btn btn-primary">View All Packages</button>
+                <div class="dropdown">
+                    <button>Activities</button>
+                    <div class="dropdown-content">
+                        <a href="#">Game Drives</a>
+                        <a href="#">Cultural Tours</a>
+                        <a href="#">Balloon Safaris</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button>Gallery</button>
+                    <div class="dropdown-content">
+                        <a href="#">Photos</a>
+                        <a href="#">Videos</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button>Blog</button>
+                    <div class="dropdown-content">
+                        <a href="#">Travel Tips</a>
+                        <a href="#">Wildlife</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button>About</button>
+                    <div class="dropdown-content">
+                        <a href="#">Who We Are</a>
+                        <a href="#">Why Choose Us</a>
+                    </div>
+                </div>
+
+                <div class="dropdown">
+                    <button>Contact</button>
+                    <div class="dropdown-content">
+                        <a href="#">Get in Touch</a>
+                        <a href="#">Book Now</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+    </section>
+    <!--header section end-->
+
+    <!--hero page-->
+    <section class="hero-slider">
+
+        <div class="slides fade">
+            <img src="./assets/images/1.jpeg" alt="Safari 1">
+        </div>
+
+        <div class="slides fade">
+            <img src="./assets/images/2.jpeg" alt="Safari 2">
+        </div>
+
+        <div class="slides fade">
+            <img src="./assets/images/3.jpeg" alt="Safari 3">
+        </div>
+
+        <div class="slides fade">
+            <img src="./assets/images/4.jpeg" alt="Safari 4">
+        </div>
+
+        <div class="slides fade">
+            <img src="./assets/images/5.jpeg" alt="Safari 5">
+        </div>
+
+        <div class="slides fade">
+            <img src="./assets/images/6.jpeg" alt="Safari 6">
+        </div>
+
+        <!-- Overlay Content -->
+        <!-- <div class="hero-content">
+    <h1>Discover Africa’s Wild Beauty</h1>
+    <p>Tailor-made safari adventures</p>
+    <a href="#tours" class="hero-btn">Explore Safaris</a>
+  </div> -->
+
+        <!-- Navigation -->
+        <a class="prev" onclick="changeSlide(-1)">❮</a>
+        <a class="next" onclick="changeSlide(1)">❯</a>
+
+        <!-- Dots -->
+        <div class="dots">
+            <span onclick="currentSlide(1)"></span>
+            <span onclick="currentSlide(2)"></span>
+            <span onclick="currentSlide(3)"></span>
+            <span onclick="currentSlide(4)"></span>
+            <span onclick="currentSlide(5)"></span>
+            <span onclick="currentSlide(6)"></span>
+        </div>
+
+    </section>
+
+    <!--hero page end-->
+
+    <!--about us section-->
+    <section id="about" class="about-section">
+
+        <div class="about-container">
+
+            <!-- Image -->
+            <div class="about-image">
+                <img src="./assets/images/7.jpeg" alt="Safari Experience">
+            </div>
+
+            <!-- Content -->
+            <div class="about-content">
+                <h2>About Us</h2>
+                <p>
+                    Safari Explorer is a locally owned tour company specializing in authentic
+                    African safari experiences across Kenya and Tanzania. With years of hands-on
+                    experience, we create unforgettable journeys that bring you closer to nature,
+                    wildlife, and culture.
+                </p>
+
+                <p>
+                    Our team of professional guides, customized itineraries, and carefully selected
+                    lodges ensure every safari is safe, comfortable, and truly unique. Whether you
+                    seek adventure, luxury, or cultural discovery, we design trips tailored to your
+                    needs.
+                </p>
+
+                <ul class="about-list">
+                    <li>✔ Expert local guides</li>
+                    <li>✔ Personalized safari packages</li>
+                    <li>✔ Reliable & safe travel</li>
+                    <li>✔ Exceptional customer service</li>
+                </ul>
+
+                <a href="#contact" class="btn">Learn More</a>
+            </div>
 
         </div>
-      </section>
 
-      <!-- 
-        - #GALLERY
-      -->
+    </section>
 
-      <section class="gallery" id="gallery">
-        <div class="container">
-          <p class="section-subtitle">Photo Gallery</p>
-          <h2 class="h2 section-title">Photo's From Travellers</h2>
-          <div>
-            <div class="image-gridd">
-              <img src="./assets/images/1.jpeg" alt="">
-              <img src="./assets/images/2.jpeg" alt="">
-              <img src="./assets/images/3.jpeg" alt="">
-              <img src="./assets/images/4.jpeg" alt="">
-              <img src="./assets/images/5.jpeg" alt="">
-              <img src="./assets/images/6.jpeg" alt="">
-              <img src="./assets/images/7.jpeg" alt="">
-              <img src="./assets/images/8.jpeg" alt="">
-              <img src="./assets/images/9.jpeg" alt="">
-              <img src="./assets/images/10.jpeg" alt="">
-              <img src="./assets/images/11.jpeg" alt="">
-              <img src="./assets/images/12.jpeg" alt="">
-              <img src="./assets/images/13.jpeg" alt="">
-              <img src="./assets/images/14.jpeg" alt="">
-              <img src="./assets/images/15.jpeg" alt="">
-              <img src="./assets/images/16.jpeg" alt="">
-              <img src="./assets/images/17.jpeg" alt="">
-              <img src="./assets/images/18.jpeg" alt="">
-              <img src="./assets/images/19.jpeg" alt="">
-              <img src="./assets/images/20.jpeg" alt="">
-              <img src="./assets/images/21.jpeg" alt="">
-              <img src="./assets/images/22.jpeg" alt="">
-              <img src="./assets/images/23.jpeg" alt="">
-              <img src="./assets/images/24.jpeg" alt="">
-            </div>
-          </div>
+    <!--about us section end-->
+
+    <!--destinations-->
+    <section class="card-section">
+
+        <div class="card-grid">
+
+            <a href="masai-mara.html" target="_blank" class="card">
+                <img src="./assets/images/8.jpeg" alt="Masai Mara">
+                <div class="card-content">
+                    <h3>Masai Mara</h3>
+                    <!-- <p>World-famous wildlife destination</p> -->
+                </div>
+            </a>
+
+            <a href="serengeti.html" target="_blank" class="card">
+                <img src="./assets/images/9.jpeg" alt="Serengeti">
+                <div class="card-content">
+                    <h3>Serengeti</h3>
+                    <!-- <p>Endless plains & great migration</p> -->
+                </div>
+            </a>
+
+            <a href="ngorongoro.html" target="_blank" class="card">
+                <img src="./assets/images/10.jpeg" alt="Ngorongoro">
+                <div class="card-content">
+                    <h3>Ngorongoro Crater</h3>
+                    <!-- <p>A natural wildlife wonder</p> -->
+                </div>
+            </a>
 
         </div>
-      </section>
 
-      <!--BLOG-->
-      <section class="blog" id="blog">
-          <p class="section-subtitle"></p>
-          <h2 class="h2 section-title"></h2>
+    </section>
+
+    <!--destinations end-->
+    <!--Accommodations-->
+    <section>
         <div class="container">
-           <p class="section-subtitle">Blog Posts</p>
-
-          <div class="blog-container">
-           
-            <div class="blog-post">
-              <h3>The Greatest Wildbeast Migration</h3>
-              <p class="date">Jan 5, 2026</p>
-              <p>Experience Africa’s most spectacular Safari.....<a href="post1.html" target="_blank" class="read-more"><i>read more</i></a></p>
-              <!-- <a href="post1.html" target="_blank" class="read-more">Read More</a> -->
+            <div>
+                <img src="./assets/images/10.jpeg" alt="">
             </div>
-
-                        <div class="blog-post">
-              <h3>The Greatest Wildbeast Migration</h3>
-              <p class="date">Jan 5, 2026</p>
-              <p>Experience Africa’s most spectacular Safari.....<a href="post1.html" target="_blank" class="read-more"><i>read more</i></a></p>
-              <!-- <a href="post1.html" target="_blank" class="read-more">Read More</a> -->
+            <div class="container">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quas nihil ipsam enim, dolorem,
+                    voluptatibus eaque dignissimos, iure rem sint nemo minima. Fuga commodi voluptatum natus saepe
+                    tempore nulla impedit laborum nobis excepturi sed atque, harum sunt, iste minima. Explicabo, esse
+                    reprehenderit aperiam nesciunt inventore ipsa, soluta odio accusantium harum aut, exercitationem
+                    doloribus. Neque natus quia odit ex quasi ipsam ab dolorum culpa architecto, ut iure, velit nisi
+                    dolorem, totam quis placeat? Impedit, excepturi illum voluptate recusandae voluptas unde eum
+                    exercitationem pariatur veritatis! Adipisci ea voluptatem perferendis dicta, odio totam fuga neque
+                    modi amet aperiam, ratione voluptatibus mollitia ullam dolor cupiditate?</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nesciunt minima aliquam, fugit illum
+                    facilis at reprehenderit beatae debitis quaerat eaque, hic quos sunt omnis mollitia quidem? Vero
+                    architecto rerum nesciunt doloribus aut? Mollitia architecto, at deserunt similique itaque explicabo
+                    quod quas, corrupti quisquam esse quasi unde provident nobis delectus vel ipsa eius incidunt sint
+                    non quos. Qui tempora labore impedit eveniet minima quasi quas non sint dicta atque est ipsum
+                    mollitia, fugit ipsa repudiandae excepturi, placeat magnam corporis officiis nisi doloribus
+                    laudantium laborum? Ducimus explicabo eveniet nisi distinctio harum quis perferendis aliquid est
+                    cum, corrupti nostrum ipsum amet. Ipsa, illum?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate culpa id perspiciatis asperiores
+                    consequuntur cum sint nemo a debitis repellat omnis, laudantium illo iure assumenda eaque,
+                    voluptatibus mollitia exercitationem autem quos quae amet. Quis iusto possimus odit voluptatem atque
+                    sunt iste, quia quisquam porro nisi. Pariatur necessitatibus distinctio aliquam aut praesentium.
+                    Ullam perferendis repudiandae, necessitatibus quam reprehenderit saepe corrupti sunt omnis unde enim
+                    ratione magni qui totam. Minima reiciendis maiores iure voluptatum nesciunt similique esse adipisci
+                    deserunt dolorem neque soluta aspernatur eaque incidunt quidem, rerum obcaecati impedit perspiciatis
+                    repellendus eius dignissimos? Voluptas labore aspernatur maiores et incidunt sapiente voluptatibus
+                    corrupti.</p>
             </div>
+        </div>
+    </section>
 
-                        <div class="blog-post">
-              <h3>The Greatest Wildbeast Migration</h3>
-              <p class="date">Jan 5, 2026</p>
-              <p>Experience Africa’s most spectacular Safari.....<a href="post1.html" target="_blank" class="read-more"><i>read more</i></a></p>
-              <!-- <a href="post1.html" target="_blank" class="read-more">Read More</a> -->
+    <!--Accommodations end-->
+
+    <!--packages-->
+    <section class="six-card-section">
+
+        <div class="six-card-grid">
+
+            <a href="destination1.html" target="_blank" class="six-card">
+                <img src="./assets/images/11.jpeg" alt="Destination 1">
+                <h3>Masai Mara</h3>
+            </a>
+
+            <a href="destination2.html" target="_blank" class="six-card">
+                <img src="./assets/images/12.jpeg" alt="Destination 2">
+                <h3>Serengeti</h3>
+            </a>
+
+            <a href="destination3.html" target="_blank" class="six-card">
+                <img src="./assets/images/13.jpeg" alt="Destination 3">
+                <h3>Ngorongoro Crater</h3>
+            </a>
+
+            <a href="destination4.html" target="_blank" class="six-card">
+                <img src="./assets/images/14.jpeg" alt="Destination 4">
+                <h3>Amboseli</h3>
+            </a>
+
+            <a href="destination5.html" target="_blank" class="six-card">
+                <img src="./assets/images/15.jpeg" alt="Destination 5">
+                <h3>Lake Nakuru</h3>
+            </a>
+
+            <a href="destination6.html" target="_blank" class="six-card">
+                <img src="./assets/images/16.jpeg" alt="Destination 6">
+                <h3>Tsavo National Park</h3>
+            </a>
+        </div>
+    </section>
+
+    <!--packages end-->
+
+    <!--Fly In Experiences-->
+    <section></section>
+        <section id="about" class="about-section">
+        <h3 class="" style="align-content: center;">Fly In Safari Experiences</h3>
+
+        <div class="about-container">
+            <!-- Content -->
+            <div class="about-content">
+                <p>
+                    Safari Explorer is a locally owned tour company specializing in authentic
+                    African safari experiences across Kenya and Tanzania. With years of hands-on
+                    experience, we create unforgettable journeys that bring you closer to nature,
+                    wildlife, and culture.
+                </p>
+                <p>
+                    Our team of professional guides, customized itineraries, and carefully selected
+                    lodges ensure every safari is safe, comfortable, and truly unique. Whether you
+                    seek adventure, luxury, or cultural discovery, we design trips tailored to your
+                    needs.
+                </p>
             </div>
             
-          </div>
-<br><br>
-        </div>
-      </section>
-
-      <!-- 
-        - #CTA
-      -->
-
-      <section class="cta" id="contact">
-        <div class="container">
-
-          <div class="cta-content">
-            <p class="section-subtitle">Call To Action</p>
-
-            <h2 class="h2 section-title">Ready For Unforgatable Travel. Remember Us!</h2>
-
-            <p class="section-text">
-              Fusce hic augue velit wisi quibusdam pariatur, iusto primis, nec nemo, rutrum. Vestibulum cumque
-              laudantium. Sit ornare
-              mollitia tenetur, aptent.
-            </p>
-          </div>
-
-          <button class="btn btn-secondary">Contact Us !</button>
-
-        </div>
-      </section>
-
-    </article>
-  </main>
-
-  <!-- 
-    - #FOOTER
-  -->
-
-  <footer class="footer">
-
-    <div class="footer-top">
-      <div class="container">
-
-        <div class="footer-brand">
-
-          <a href="#" class="logo">
-            <img src="./assets/images/logo.svg" alt="Tourly logo">
-          </a>
-
-          <p class="footer-text">
-            Urna ratione ante harum provident, eleifend, vulputate molestiae proin fringilla, praesentium magna conubia
-            at
-            perferendis, pretium, aenean aut ultrices.
-          </p>
+            <!-- Image -->
+            <div class="about-image">
+                <img src="./assets/images/7.jpeg" alt="Safari Experience">
+            </div>
 
         </div>
 
-        <div class="footer-contact">
+    </section>
+    <!--Fly In Experiences end-->
 
-          <h4 class="contact-title">Contact Us</h4>
+    <!--why travel with us-->
+    <section class="why-us-section">
+  <h2>Why Travel With Us</h2>
 
-          <p class="contact-text">
-            Feel free to contact and reach us !!
-          </p>
+  <div class="why-slider-wrapper">
 
-          <ul>
+    <button class="slider-btn left" onclick="slideWhy(-1)">❮</button>
 
-            <li class="contact-item">
-              <ion-icon name="call-outline"></ion-icon>
+    <div class="why-slider">
+      <div class="why-track">
 
-              <a href="tel:+01123456790" class="contact-link">+254 777 990 664</a>
-            </li>
-
-            <li class="contact-item">
-              <ion-icon name="mail-outline"></ion-icon>
-
-              <a href="#" class="contact-link">email@email.com</a>
-            </li>
-
-            <li class="contact-item">
-              <ion-icon name="location-outline"></ion-icon>
-
-              <address>Nairobi, Kenya</address>
-            </li>
-
-          </ul>
-
+        <div class="why-card">
+          <img src="images/icon1.png" alt="">
+          <h3>Expert Local Guides</h3>
+          <p>Our experienced guides know Africa inside out.</p>
         </div>
 
-        <div class="footer-form">
+        <div class="why-card">
+          <img src="images/icon2.png" alt="">
+          <h3>Custom Itineraries</h3>
+          <p>Safaris designed around your interests and budget.</p>
+        </div>
 
-          <p class="form-text">
-            Subscribe our newsletter for more update & news !!
-          </p>
+        <div class="why-card">
+          <img src="images/icon3.png" alt="">
+          <h3>Reliable & Safe</h3>
+          <p>Your safety and comfort are our top priority.</p>
+        </div>
 
-          <form action="" class="form-wrapper">
-            <input type="email" name="email" class="input-field" placeholder="Enter Your Email" required>
+        <div class="why-card">
+          <img src="images/icon4.png" alt="">
+          <h3>Best Value</h3>
+          <p>Competitive pricing without compromising quality.</p>
+        </div>
 
-            <button type="submit" class="btn btn-secondary">Subscribe</button>
-          </form>
+        <div class="why-card">
+          <img src="images/icon5.png" alt="">
+          <h3>24/7 Support</h3>
+          <p>We are available before, during, and after your trip.</p>
+        </div>
 
+        <div class="why-card">
+          <img src="images/icon6.png" alt="">
+          <h3>Eco-Friendly Travel</h3>
+          <p>We support conservation and local communities.</p>
         </div>
 
       </div>
     </div>
 
-    <div class="footer-bottom">
-      <div class="container">
+    <button class="slider-btn right" onclick="slideWhy(1)">❯</button>
 
-        <p class="copyright">
-          &copy; 2025 <a href="#"></a>| All rights reserved
-        </p>
+  </div>
+</section>
 
-        <ul class="footer-bottom-list">
+    <!--why travel with us end-->
 
-          <li>
-            <a href="#" class="footer-bottom-link">Privacy Policy</a>
-          </li>
+    <!--guest experiences-->
+    <section class="guest-section">
+  <h2>Guest Experiences</h2>
 
-          <li>
-            <a href="#" class="footer-bottom-link">Term & Condition</a>
-          </li>
+  <div class="guest-slider">
 
-          <li>
-            <a href="#" class="footer-bottom-link">FAQ</a>
-          </li>
-
-        </ul>
-
+    <div class="guest-slide active">
+      <p class="guest-text">
+        “Our safari was absolutely unforgettable. The guides were knowledgeable,
+        friendly, and made every game drive exciting.”
+      </p>
+      <div class="guest-info">
+        <strong>Sarah M.</strong>
+        <span>USA</span>
       </div>
+      <div class="stars">★★★★★</div>
     </div>
 
-  </footer>
+    <div class="guest-slide">
+      <p class="guest-text">
+        “Everything was perfectly organized from start to finish. We felt safe,
+        comfortable, and truly immersed in nature.”
+      </p>
+      <div class="guest-info">
+        <strong>James K.</strong>
+        <span>UK</span>
+      </div>
+      <div class="stars">★★★★★</div>
+    </div>
 
-  <!-- 
-    - #GO TO TOP
-  -->
+    <div class="guest-slide">
+      <p class="guest-text">
+        “An amazing experience! Seeing wildlife up close and learning about local
+        culture made this trip special.”
+      </p>
+      <div class="guest-info">
+        <strong>Emily R.</strong>
+        <span>Canada</span>
+      </div>
+      <div class="stars">★★★★★</div>
+    </div>
 
-  <a href="#top" class="go-top" data-go-top>
-    <ion-icon name="chevron-up-outline"></ion-icon>
-  </a>
+    <div class="guest-slide">
+      <p class="guest-text">
+        “Highly recommend! Professional service, great accommodations, and unforgettable
+        moments every day.”
+      </p>
+      <div class="guest-info">
+        <strong>Daniel W.</strong>
+        <span>Australia</span>
+      </div>
+      <div class="stars">★★★★★</div>
+    </div>
 
-  <!-- 
-    - custom js link
-  -->
-  <script src="./assets/js/script.js"></script>
+    <!-- Navigation -->
+    <button class="guest-btn prev" onclick="changeGuest(-1)">❮</button>
+    <button class="guest-btn next" onclick="changeGuest(1)">❯</button>
 
-  <!-- 
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </div>
+</section>
 
+    <!--guest experiences end-->
+
+    <!--our partners-->
+    <section class="partners-section">
+  <h2>Our Partners</h2>
+
+  <div class="partners-slider">
+    <div class="partners-track">
+
+      <div class="partner">
+        <img src="./assets/images/1.jpeg" alt="Partner 1">
+      </div>
+
+      <div class="partner">
+        <img src="./assets/images/2.jpeg" alt="Partner 2">
+      </div>
+
+      <div class="partner">
+        <img src="./assets/images/3.jpeg" alt="Partner 3">
+      </div>
+
+      <div class="partner">
+        <img src="./assets/images/4.jpeg" alt="Partner 4">
+      </div>
+
+      <div class="partner">
+        <img src="./assets/images/5.jpeg" alt="Partner 5">
+      </div>
+
+      <div class="partner">
+        <img src="./assets/images/6.jpeg" alt="Partner 6">
+      </div>
+
+    </div>
+  </div>
+</section>
+
+    <!--our partners end-->
+    <!--footer start-->
+
+    <footer class="site-footer">
+  <div class="footer-container">
+
+    <!-- Column 1: Logo / About -->
+    <div class="footer-column">
+      <h3>Rivon Safaris</h3>
+      <p>We create unforgettable African wildlife adventures — from custom safaris to tailored travel experiences across East Africa.</p>
+    </div>
+
+    <!-- Column 2: Quick Links -->
+    <div class="footer-column">
+      <h4>Quick Links</h4>
+      <ul class="footer-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#tours">Safaris</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Column 3: Contact Info -->
+    <div class="footer-column">
+      <h4>Contact Us</h4>
+      <p>Nairobi, Kenya</p>
+      <p>+254 792 790 644</p>
+      <p><a href="#">rivonsafaris@gmail.com</a></p>
+    </div>
+
+    <!-- Column 4: Socials -->
+    <div class="footer-column">
+      <h4>Follow Us</h4>
+      <div class="footer-socials">
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Instagram">Instagram</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+      </div>
+      <!-- Optional newsletter -->
+      <h4 style="margin-top:15px;">Newsletter</h4>
+      <form class="footer-newsletter">
+        <input type="email" placeholder="Your email">
+        <button type="submit">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2026 Rivon Safaris. All rights reserved.</p>
+  </div>
+</footer>
+
+
+    <!--footer end-->
 </body>
+<script src="./assets/js/script.js"></script>
 
 </html>
