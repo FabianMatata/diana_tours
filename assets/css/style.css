@@ -413,6 +413,7 @@ nav {
 
 .why-card img {
   width: 60px;
+  height: 55px;
   margin-bottom: 15px;
 }
 
@@ -427,8 +428,8 @@ nav {
 
 /* BUTTONS */
 .slider-btn {
-  background: #024;
-  color: white;
+  /* background: #024; */
+  color: blue;
   border: none;
   font-size: 22px;
   padding: 10px 14px;
@@ -437,7 +438,7 @@ nav {
 }
 
 .slider-btn:hover {
-  background: #046;
+  /* background: #046; */
 }
 
 /* MOBILE */
@@ -448,6 +449,9 @@ nav {
 }
 
 /* why travel with us end */
+/* guest experiences 1 */
+
+/* guest experiences 1 end */
 
 /* Guest slider start */
 .guest-section {
@@ -560,7 +564,7 @@ nav {
 
 .partner img {
   height: 70px;
-  filter: grayscale(100%);
+  /* filter: grayscale(100%); */
   opacity: 0.8;
   transition: all 0.3s ease;
 }
@@ -607,6 +611,9 @@ nav {
   gap: 30px;
   max-width: 1200px;
   margin: auto;
+  /* align-content: center;
+  align-items: center;
+  align-self: center; */
 }
 
 .footer-column h3,
@@ -691,16 +698,16 @@ nav {
     gap: 20px;
   }
 
-  .footer-newsletter input {
+  /* .footer-newsletter input {
     width: 100%;
     margin-bottom: 10px;
     border-radius: 4px;
-  }
+  } */
 
-  .footer-newsletter button {
+  /* .footer-newsletter button {
     width: 100%;
     border-radius: 4px;
-  }
+  } */
 }
 
 
