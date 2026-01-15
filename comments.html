@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Guest Feedback Slider</title>
+
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f7f7;
+}
+
+.feedback-section {
+  max-width: 900px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.feedback-section h2 {
+  margin-bottom: 30px;
+}
+
+.slider {
+  position: relative;
+  overflow: hidden;
+  background: #fff;
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.slide {
+  display: none;
+}
+
+.slide.active {
+  display: block;
+}
+
+.stars {
+  color: #f4b400;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.quote {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.guest-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls button {
+  background: #333;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.controls button:hover {
+  background: #555;
+}
+</style>
+</head>
+
+<body>
+
+<section class="feedback-section">
+  <h2>⭐ Guest Feedback & Ratings</h2>
+
+  <div class="slider">
+
+    <div class="slide active">
+      <div class="stars">★★★★★</div>
+      <p class="quote">“Exceptional service and very welcoming staff. The rooms were spotless and comfortable.”</p>
+      <p class="guest-name">— James K.</p>
+    </div>
+
+    <div class="slide">
+      <div class="stars">★★★★☆</div>
+      <p class="quote">“Great location and delicious food. Perfect place to relax after a long day.”</p>
+      <p class="guest-name">— Sarah M.</p>
+    </div>
+
+    <div class="slide">
+      <div class="stars">★★★★★</div>
+      <p class="quote">“From check-in to check-out, everything was smooth. Highly recommended.”</p>
+      <p class="guest-name">— Daniel O.</p>
+    </div>
+
+    <div class="slide">
+      <div class="stars">★★★★☆</div>
+      <p class="quote">“Beautiful ambiance and friendly staff. I felt at home during my stay.”</p>
+      <p class="guest-name">— Grace W.</p>
+    </div>
+
+    <div class="slide">
+      <div class="stars">★★★★★</div>
+      <p class="quote">“Excellent value for money. Clean rooms and prompt service.”</p>
+      <p class="guest-name">— Michael T.</p>
+    </div>
+
+    <div class="slide">
+      <div class="stars">★★★★★</div>
+      <p class="quote">“A peaceful and comfortable stay. I will definitely be coming back.”</p>
+      <p class="guest-name">— Linda A.</p>
+    </div>
+
+  </div>
+
+  <div class="controls">
+    <button onclick="prevSlide()">❮ Prev</button>
+    <button onclick="nextSlide()">Next ❯</button>
+  </div>
+</section>
+
+<script>
+let currentSlide = 0;
+const slides = document.querySelectorAll(".slide");
+
+function showSlide(index) {
+  slides.forEach(slide => slide.classList.remove("active"));
+  slides[index].classList.add("active");
+}
+
+function nextSlide() {
+  currentSlide = (currentSlide + 1) % slides.length;
+  showSlide(currentSlide);
+}
+
+function prevSlide() {
+  currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+  showSlide(currentSlide);
+}
+
+// Auto-slide every 5 seconds
+setInterval(nextSlide, 5000);
+</script>
+
+</body>
+</html>

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Testimonial Slider</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: #007BFF; /* blue background like the screenshot */
+    color: #fff;
+    margin: 0;
+    padding: 50px 0;
+    text-align: center;
+  }
+
+  h2 {
+    margin-bottom: 10px;
+  }
+
+  p.subtitle {
+    margin-bottom: 40px;
+    font-size: 0.9em;
+    color: #dce6f1;
+  }
+
+  .slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+
+  .slides {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background: #007BFF;
+  }
+
+  .testimonial-card {
+    background: #fff;
+    color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    max-width: 500px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+
+  .testimonial-card p.quote {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+
+  .testimonial-card p.author {
+    font-weight: bold;
+    margin-bottom: 2px;
+  }
+
+  .testimonial-card p.role {
+    font-size: 0.9em;
+    color: #555;
+  }
+
+  .navigation {
+    margin-top: 20px;
+  }
+
+  .nav-btn {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+
+  .nav-btn.active {
+    opacity: 1;
+  }
+</style>
+</head>
+<body>
+
+<h2>Trusted and Loved by The World’s Best</h2>
+<p class="subtitle">We're honored that some of the most talented designers and developers out there work with Smart Slider 3 — and you can too.</p>
+
+<div class="slider">
+  <div class="slides">
+    <div class="slide">
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/60" alt="Ben Pines">
+        <p class="quote">“Smart Slider 3 is a great solution for adding stylish, animated sliders to your site. The list of features are impressive, and there is a great and helpful team of developers behind this solid plugin.”</p>
+        <p class="author">Ben Pines</p>
+        <p class="role">CMO at Elementor</p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/60" alt="Raelene Morey">
+        <p class="quote">“I’ve worked with a lot of different slider plugins and I can honestly say Smart Slider 3 is the BEST solution for WordPress. It’s powerful, yet so much fun to use. The free version has more features than other premium sliders!”</p>
+        <p class="author">Raelene Morey</p>
+        <p class="role">Founder at Words By Birds</p>
+      </div>
+    </div>
+    <div class="slide">
+      <div class="testimonial-card">
+        <img src="https://via.placeholder.com/60" alt="Daniel Pataki">
+        <p class="quote">“No matter what you want to accomplish, I can heartily recommend the free version. It already provides more functionality than any other slider plugin — even many premium ones.”</p>
+        <p class="author">Daniel Pataki</p>
+        <p class="role">CTO at Kinsta</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="navigation">
+  <span class="nav-btn active"></span>
+  <span class="nav-btn"></span>
+  <span class="nav-btn"></span>
+</div>
+
+<script>
+  const slides = document.querySelector('.slides');
+  const slideCount = document.querySelectorAll('.slide').length;
+  const navBtns = document.querySelectorAll('.nav-btn');
+  let currentIndex = 0;
+
+  function showSlide(index) {
+    slides.style.transform = `translateX(-${index * 100}%)`;
+    navBtns.forEach(btn => btn.classList.remove('active'));
+    navBtns[index].classList.add('active');
+  }
+
+  navBtns.forEach((btn, idx) => {
+    btn.addEventListener('click', () => {
+      currentIndex = idx;
+      showSlide(currentIndex);
+    });
+  });
+
+  // Auto slide every 5 seconds
+  setInterval(() => {
+    currentIndex = (currentIndex + 1) % slideCount;
+    showSlide(currentIndex);
+  }, 5000);
+</script>
+
+</body>
+</html>
