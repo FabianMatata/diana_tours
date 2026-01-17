@@ -170,7 +170,7 @@ nav {
   padding: 16px;
   color: white;
   font-size: 24px;
-  background: rgba(0,0,0,0.4);
+  background: rgba(0,0,0,0.1);
   border-radius: 50%;
   user-select: none;
 }
@@ -428,17 +428,13 @@ nav {
 
 /* BUTTONS */
 .slider-btn {
-  /* background: #024; */
-  color: blue;
+  background-color: transparent;
+  color: black;
   border: none;
   font-size: 22px;
   padding: 10px 14px;
   cursor: pointer;
   border-radius: 50%;
-}
-
-.slider-btn:hover {
-  /* background: #046; */
 }
 
 /* MOBILE */
@@ -535,44 +531,99 @@ nav {
 
 /* Guest slider end */
 
-/* our partners */
+
+/* Reset overflow issues */
+* {
+  box-sizing: border-box;
+}
+
+/* Partners Section */
 .partners-section {
-  padding: 60px 20px;
-  background: #fff;
+  width: 100%;
+  max-width: 100vw;
+  padding: 40px 16px;
+  background: #f9f9f9;
   text-align: center;
+  overflow: hidden;
 }
 
 .partners-section h2 {
+  font-size: 2rem;
   margin-bottom: 30px;
 }
 
+
+/* Slider container */
 .partners-slider {
+  width: 100%;
+  max-width: 100%;
   overflow: hidden;
-  max-width: 1100px;
-  margin: auto;
 }
 
+/* Track */
 .partners-track {
   display: flex;
-  gap: 40px;
-  /* animation: scrollPartners 20s linear infinite; */
+  align-items: center;
+  width: max-content;
+  gap: 24px;
+  animation: scroll 25s linear infinite;
+    /* will-change: transform; */
 }
 
+/* Partner */
 .partner {
   flex: 0 0 auto;
+  width: clamp(90px, 15vw, 160px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Images */
 .partner img {
-  height: 70px;
-  /* filter: grayscale(100%); */
-  opacity: 0.8;
-  transition: all 0.3s ease;
+  width: 100%;
+  height: auto;
+  max-height: 80px;
+  object-fit: contain;
 }
 
-.partner img:hover {
-  filter: grayscale(0%);
-  opacity: 1;
+/* Animation */
+@keyframes scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .partners-section h2 {
+    font-size: 1.75rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .partners-section {
+    padding: 30px 12px;
+  }
+
+  .partners-track {
+    gap: 16px;
+    animation-duration: 18s;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .partners-track {
+    gap: 12px;
+    animation-duration: 15s;
+  }
+}
+
 
 /* Infinite scroll animation */
 @keyframes scrollPartners {

@@ -96,5 +96,42 @@ partnersTrack.addEventListener("mouseout", () => {
   partnersTrack.style.animationPlayState = "running";
 });
 
+
+/* duplicate code */
+const track = document.querySelector(".partners-track");
+const slider = document.querySelector(".partners-sliderr");
+
+let position = 0;
+let speed = 0.5; // smaller = slower
+let animationId;
+
+function slidePartners() {
+  const trackWidth = track.scrollWidth;
+  const sliderWidth = slider.offsetWidth;
+
+  // Stop when last logo reaches the right edge
+  if (Math.abs(position) >= trackWidth - sliderWidth) {
+    cancelAnimationFrame(animationId);
+    return;
+  }
+
+  position -= speed;
+  track.style.transform = `translateX(${position}px)`;
+  animationId = requestAnimationFrame(slidePartners);
+}
+
+// Start sliding
+slidePartners();
+
+/* Pause on hover */
+slider.addEventListener("mouseenter", () => {
+  cancelAnimationFrame(animationId);
+});
+
+slider.addEventListener("mouseleave", () => {
+  animationId = requestAnimationFrame(slidePartners);
+});
+
+
 /* our partner end */
 
